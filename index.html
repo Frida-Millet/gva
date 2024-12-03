@@ -1,0 +1,60 @@
+<!-- Frida Millet 
+ 27/11/24 -->
+ 
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Cita GVA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="./img/gva.jpeg"class="img_gva">
+            <h2>Cita Previa - Identificación de la persona solicitante</h2>
+        </header>
+
+        <section class="form-section">
+            <div class="section-title-container">
+                <div class="section-icon">A</div>
+                <h3 class="section-title">DATOS DE LA PERSONA SOLICITANTE</h3>
+            </div>
+            <p>Introduzca su número de tarjeta SIP y su fecha de nacimiento:</p>
+            <form>
+                <div class="form-row">
+                    <div class="form-group wide">
+                        <label for="sip">Número SIP <span class="required">*</span></label>
+                        <input type="text" id="sip" name="sip" maxlength="20" required>
+                    </div>
+                    <div class="form-group small">
+                        <label for="day">Día <span class="required">*</span></label>
+                        <input type="number" id="day" name="day" min="1" max="31" required>
+                    </div>
+                    <div class="form-group small">
+                        <label for="month">Mes <span class="required">*</span></label>
+                        <input type="number" id="month" name="month" min="1" max="12" required>
+                    </div>
+                    <div class="form-group small">
+                        <label for="year">Año <span class="required">*</span></label>
+                        <input type="number" id="year" name="year"  min="1900" max="2100" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+
+        <section class="info-section">
+            <h4></h4>
+            <div class="images">
+                <img src="./img/sip1.jpeg">
+                <img src="./img/sip2.jpg">
+                <img src="./img/sip3.jpeg">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+ 
